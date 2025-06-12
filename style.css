@@ -12,9 +12,9 @@ body {
 
 /*header*/
 .header {
-padding: 60px, 0;
+padding: 60px 0;
 text-align: center;
-border-bottom: 1px, solid, #e3f2fd;
+border-bottom: 1px solid #e3f2fd;
 background: linear-gradient(135deg, #e3f2fd, 0%, #fff8e1, 100%);
 }
 .container {
@@ -22,19 +22,12 @@ background: linear-gradient(135deg, #e3f2fd, 0%, #fff8e1, 100%);
  margin: 0 auto;
  padding: 0 20px;
 }
-.logo {
-max-width: 100%;
-width: -100%;
-height: auto;
-background: linear-gradient(135deg, #1976d2 0%, #ffc107 100%);
-color: white;
-padding: 20px 40px;
-border-radius: 10px;
-display: inline-block;
-margin-bottom: 2rem;
+.logo img {
+    width: 90px;
+    height: auto;
 }
 .header h1 {
-font-size: 2.5rem;
+font-size: 3rem;
 font-weight: bold;
 margin-bottom: 1rem;
 color: #333;
@@ -54,7 +47,7 @@ color: #333;
 
 /*projectpitch*/
 .pitch {
-    padding: 80px, 0;
+padding: 80px 0;
 }
 .pitch h2 {
 font-size: 2rem;
@@ -125,9 +118,33 @@ font-size: 1rem;
 opacity: 0.8;
 }
 @media (max-width: 768px) {
-.header h1 { font-size: 2rem; }
-.logo { padding: 15px 30px; }
-.pitch h2, .bio h2{ font-size: 1.8rem; }
-.effects { grid-template-columns: 1fr; }
-.container { padding: 0 15px; }
+  .header h1, .header h2, .header h3 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 90px;
+    padding: 10px 20px;
+    margin: 0 auto 1.5rem;
+  }
+
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .effects {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pitch,
+  .bio {
+    padding: 50px 0;
+  }
+
+  .bio-content p,
+  .pitch-content p {
+    font-size: 1rem;
+  }
 }
